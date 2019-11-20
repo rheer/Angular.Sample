@@ -1,0 +1,17 @@
+<p>
+  <!-- <b>#trade-list-presentation#</b> -->
+  <dx-data-grid
+   [dataSource]="trades"
+   [showRowLines]="true"
+   [showColumnLines]="false"
+   [focusedRowEnabled]="true"
+   [focusedRowKey]="selectionId"
+   [focusStateEnabled]="true"
+   [twoWayBindingEnabled]="false"
+   keyExpr="id"
+   (onFocusedRowChanged)="onFocusedRowChanged($event)"
+  >
+  <dxo-selection mode="single"></dxo-selection>
+  </dx-data-grid>
+</p>
+

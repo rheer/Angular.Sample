@@ -1,0 +1,13 @@
+<p>
+  <!-- <b>#instrument-detail-route-container#</b> -->
+  <app-instrument-detail-presentation 
+    [instrument]="instrument$ | async"
+    [instrumentId]="instrumentId"
+    (instrumentChanges)="onInstrumentChanged($event)"
+  >
+</app-instrument-detail-presentation>
+<app-trade-list-presentation 
+  [trades]="trades$ | async">
+  
+</app-trade-list-presentation>
+</p>

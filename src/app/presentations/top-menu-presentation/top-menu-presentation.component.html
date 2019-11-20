@@ -1,0 +1,12 @@
+  <!-- <b>#top-menu-presentation#</b> -->
+  <nav class="navbar navbar-light bg-light">
+    <dx-menu
+      [dataSource]="menuItems"
+      displayExpr="name"
+      orientation="horizontal"
+      showFirstSubmenuMode="onHover"
+      hideSubmenuOnMouseLeave="true"
+      (onItemClick)="onNavigate($event)"
+    >
+    </dx-menu>
+  </nav>

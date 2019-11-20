@@ -1,0 +1,8 @@
+
+  <!-- <b>#instrument-list-route-container#</b> -->
+
+  <app-instrument-list-presentation
+    [instruments]="instruments$ | async"
+    (selectedId)="onSelectedInstrumentIdChanged($event)"
+  ></app-instrument-list-presentation>
+  <router-outlet></router-outlet>
